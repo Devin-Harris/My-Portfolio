@@ -1,0 +1,330 @@
+//Global Styling ---------------------------------------------------------------------------
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+$Cyan: #30CDFF;
+$DarkCyan: #0C3440;
+
+//Mobile General Query
+@media only screen and (max-width: 1100px) {
+//Navigation Styling ---------------------------------------------------------------------------
+nav {
+    #links {
+        display: none;
+        ul {
+            
+            li {
+                a {
+                    opacity: 0;
+                }
+            }
+        }
+    }
+    #hamburger {
+        display: block;
+        position: fixed;
+        top: .5rem;
+        right: 1rem;
+        height: max-content;
+        z-index: 5000;
+        .line {
+            position: relative;
+            width: 3.5rem;
+            height: .33rem;
+            background-color: white;
+            margin: .7rem 0;
+            border-radius: 50rem;
+        }
+    }
+}
+
+#pages {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.page {
+    width: 100vw;
+    position: relative;
+    top: -10rem;
+    left: 0;
+}
+
+//Page 1 Styling ---------------------------------------------------------------------------
+#page-1 {
+    top: 0;
+    #heading {
+        top: 50%;  
+        width: 70%;
+        h1 {
+            font-size: 200%;
+        }
+    }
+    img {
+        content:url('../../assets/HomePage/Union-6.svg')
+    }
+    #pathImage {
+        content:url('../../assets/HomePage/HomeBackDrop.svg')
+    }
+}
+
+//Page 2 Styling ---------------------------------------------------------------------------
+#page-2 {
+    top: 0;
+    .spacer {
+        padding-top: 20%;
+    }
+    #workWrapper {
+        grid-template-columns: 1fr;
+        .card {
+            height: 25rem;
+        }
+    }
+    h1 {
+        font-size: 200%;
+    }
+}
+
+.mediaWrapper {
+    width: 80%;
+    i {
+        font-size: 300%;
+        margin: 2rem 1rem;
+    }
+}
+
+//Page 3 Styling ---------------------------------------------------------------------------
+#page-3 {
+    
+    #aboutWrapper {
+        height: auto;
+        width: 80%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        margin-top: -10%;
+        #aboutText {
+            padding: 2rem;
+            h4 {
+                
+            }
+            button {
+                background-color: white;
+            }
+        }
+    }
+}
+
+//Page 4 Styling ---------------------------------------------------------------------------
+#page-4 {
+    padding-top: 40%;
+    #ContactForm {
+        width: 70%;
+        #contact-heading {
+            flex-direction: column;
+            align-items: center;
+            h1 {
+                font-size: 2rem;
+            }
+            .mediaWrapper {
+                display: flex;
+                align-items: center;
+                i {
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+}
+
+footer {
+    padding: 2rem 2rem 0rem 2rem;
+    flex-direction: column;
+    justify-content: center;
+    p, div a {
+        font-size: .8rem;
+        text-align: center;
+    }
+    div {
+        display: flex;
+        justify-content: center;
+        padding: 1rem 0;
+    }
+}
+
+} //Media Query Wrapper
+
+
+//Mobile Bug Queries -------------------------------------------------------------------------------
+//Media Bug Query 1
+@media only screen and (max-width: 400px) {
+
+//Page 1 Styling ---------------------------------------------------------------------------
+#page-1 {
+    
+    #heading {
+        
+    }
+}
+
+//Page 2 Styling ---------------------------------------------------------------------------
+#page-2 {
+    
+    h1 {
+        
+    }
+    #HeaderPage-2 {
+        padding-top: 15%;
+    }
+    #workWrapper {
+        
+    }
+}
+
+.mediaWrapper {
+    
+    i {
+        
+    }
+}
+
+//Page 3 Styling ---------------------------------------------------------------------------
+#page-3 {
+    
+    #aboutWrapper {
+        
+        #aboutText {
+            
+            h1 {
+                
+            }
+            h4 {
+               
+            }
+        }
+    }
+}
+//Page 4 Styling ---------------------------------------------------------------------------
+#page-4 {
+    
+    #ContactForm {
+        width: 80%;
+        #contact-heading {
+            
+            h1 {
+                
+            }
+            .mediaWrapper {
+                
+                i {
+                    
+                }
+            }
+        }
+    }
+}
+
+} //Media Query Wrapper
+
+
+//Media Bug Query 2 ------------------------------------------------------------------------
+@media only screen and (min-width: 400px) and (max-width: 710px) {
+
+//Page 1 Styling ---------------------------------------------------------------------------
+#page-1 {
+    
+    #heading {
+        
+    }
+}
+
+//Page 2 Styling ---------------------------------------------------------------------------
+#page-2 {
+    
+    h1 {
+        
+    }
+    #workWrapper {
+        
+    }
+}
+
+.mediaWrapper {
+    
+    i {
+        
+    }
+}
+
+
+//Page 4 Styling ---------------------------------------------------------------------------
+#page-4 {
+    
+    #ContactForm {
+        
+        #contact-heading {
+            
+            h1 {
+                
+            }
+            .mediaWrapper {
+                
+                i {
+                    
+                }
+            }
+        }
+    }
+}
+
+footer {
+    
+    p, div a {
+        
+    }
+    div {
+        
+    }
+}
+
+} //Media Query 
+
+//Media Bug Query 3 ------------------------------------------------------------------------
+@media only screen and (min-width: 710px) and (max-width: 850px) {
+
+//Page 2 Styling ---------------------------------------------------------------------------
+#page-2 {
+    
+    #workWrapper {
+        
+    }
+}
+
+} //Media Query
+
+
+//Media Bug Query 4 ------------------------------------------------------------------------
+@media only screen and (min-width: 850px) and (max-width: 980px) {
+
+//Page 2 Styling ---------------------------------------------------------------------------
+#page-2 {
+    
+    #workWrapper {
+        
+    }
+}
+
+} //Media Query 
+
+
+//Media Bug Query 5 ------------------------------------------------------------------------
+@media only screen and (min-width: 980px) and (max-width: 1100px) {
+
+//Page 2 Styling ---------------------------------------------------------------------------
+#page-2 {
+   
+    #workWrapper {
+       
+    }
+}
+
+} //Media Query 

@@ -1,0 +1,219 @@
+@media only screen and (min-width: 1100px) {
+//Navigation Styling ---------------------------------------------------------------------------
+nav {
+    width: 100vw;
+    height: 5rem;
+    background-color: rgba(255, 255, 255, 0.3);
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    #nav-logo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        &:hover {
+            cursor: pointer;
+        }
+        img {
+            width: 5rem;
+            height: 5rem;
+        }
+        h1 {
+            font-family: 'Montserrat';
+            font-weight: 400;
+            line-height: 1rem;
+            font-size: 1rem;
+            color: white;
+        }
+        span {
+            font-weight: 700;
+        }
+    }
+    #links {
+        height: inherit;
+        ul {
+            list-style: none;
+            width: 50rem;
+            height: inherit;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            position: absolute;
+            top: 0;
+            right: 1rem;
+            li {
+                a {
+                    font-family: 'Montserrat';
+                    font-weight: 500;
+                    text-decoration: none;
+                    transition: .3s;
+                    &:hover {
+                        color: $DarkCyan;
+
+                    }
+                }
+            }
+        }
+    }
+    #hamburger {
+        //Nothing on desktop
+        display: none;
+    }
+}
+
+//Active and Unactive Links Style
+.active {
+    color: white;
+}
+.unactive {
+    color: rgba(255, 255, 255, 0.548);
+}
+
+.page {
+    background-color: $Cyan;
+}
+
+//Page 1 Styling ---------------------------------------------------------------------------
+#page-1 {
+    position: relative;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -10%;
+    background-color: #30cdff;
+    background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2316acd9' fill-opacity='0.4'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    #heading {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 5;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80vw;
+        h1 {
+            font-family: 'Lato';
+            font-weight: 800;
+            font-size: 6rem;
+            color: white;
+            margin-bottom: 2%;
+            text-align: center;
+            display: inline-block;
+            font-size: 600%;
+        }   
+        a {
+            font-family: 'Lato';
+            font-weight: 500;
+            font-size: 1rem;
+            color: $Cyan;
+            text-align: center;
+            text-decoration: none;
+            width: 85%;
+            padding: 1rem;
+            background-color: white;
+            transition: .3s;
+            &:hover {
+                cursor: pointer;
+                width: 75%;
+                font-size: 1.02rem;
+                background-color: $DarkCyan;
+                color: white;
+            }
+        }
+    }
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        z-index: 2;
+    }
+    #pathImage {
+        z-index: 3;
+        mix-blend-mode: screen;
+        opacity: .3;
+    }
+}
+
+//Gallery Styling ---------------------------------------------------------------------------
+#galleryWrapper {
+    background-color: #0c3440;
+    #gallery {
+        padding: 10% 5%;
+        width: 80%;
+        height: max-content;
+        margin: 0 auto;
+        display: grid;
+        grid-row-gap: 2vmin;
+        grid-column-gap: 2vmin;
+        grid-template-columns: repeat(3, 1fr);
+        .ImageSet {
+            width: 45vmin;
+            height: 50vmin;
+            margin: 0 auto;
+            padding: .3rem;
+            background-position: center;
+            background-size: cover;
+            box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
+           a {
+                height: 100%;
+                width: 100%;
+                display: block;
+                position: relative;
+                top: 0;
+                left: 0;
+                z-index: 50;
+                padding: .3rem;
+                transition: .3s;
+                i {
+                    position: relative;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    z-index: 500;
+                    font-size: 5rem;
+                    color: white;
+                    opacity: 0;
+                    transition: .3s;
+                }
+                &:hover {
+                    background-color: rgba(0, 0, 0, 0.8);
+                    i {
+                        opacity: 1;
+                    }
+                }
+           }
+        }
+    }
+}
+
+//Footer Styling ---------------------------------------------------------------------------
+footer {
+    background-color: rgb(22, 22, 22);
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 5rem;
+    p {
+        font-family: 'lato';
+        font-weight: 500;
+        color:white;
+    }
+    div {
+        a {
+            text-decoration: none;
+            font-family: 'lato';
+            font-weight: 500;
+            color:white;
+            margin: 0 .5rem;
+        }
+    }
+}
+} //Media Query End S-Bracket
