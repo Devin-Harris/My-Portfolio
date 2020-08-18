@@ -1,103 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>Devin Harris Designs | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devin Harris Designs</title>
 
-    <!--Styling and Javascript Linking-->
-    <link rel="stylesheet" href="css/styles/main.css">
-    <link rel="stylesheet" href="css/styles/mainQuery.css">
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
-    <script defer src="js/main.js"></script>
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script defer src="js/jqueryCode.js"></script>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/home-page.css">
+    <link rel="stylesheet" href="./css/mediaQueries.css">
+
     <script defer src="https://kit.fontawesome.com/ce1e161f8c.js" crossorigin="anonymous"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
+    <script defer src="./js/index.js"></script>
+    <script defer src="./js/redirects.js"></script>
 </head>
-
 <body>
-    <!------------------------------------------------Navigation Bar------------------------------------------------>
+    
+    <!-- Navigation -->
     <nav>
-        <div id="nav-logo">
-            <img src="assets/HomePage/DCHlogoAI-03.png" alt="WhiteLogo">
-            <h1>Devin Harris <br>
-                <span>Designs</span>
-            </h1>
-        </div>
-        <div id="links">
+        <div id="HeaderLogo"></div>
+        <div id="Links">
             <ul>
-                <li><a class="active" onclick="HamClick()" href="#">Home</a></li>
-                <li><a class="unactive" onclick="HamClick()" href="#HeaderPage-2">My Work</a></li>
-                <li><a class="unactive" onclick="HamClick()" href="#aboutWrapper">About Me</a></li>
-                <li><a class="unactive" onclick="HamClick()" href="#ContactForm">Contact Me</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/#work_section">My Work</a></li> 
+                <li><a href="/pages/contact.html">Contact Me</a></li>
             </ul>
         </div>
-        <div onclick="HamClick()" id="hamburger">
+        <div id="Hamburger">
             <div class="line T"></div>
             <div class="line M"></div>
             <div class="line B"></div>
         </div>
     </nav>
 
-    <div id="pages">
-    <!------------------------------------------------Page 1------------------------------------------------>
-    <div class="page" id="page-1">
-        <div id="heading">
-            <h1>I DESIGN THINGS.</h1>
-            <a id="viewBtn" href="#HeaderPage-2">View my work</a>
+    <!-- Main heading -->
+    <div id="Main_Heading">
+
+        <img src="./assets/HomePage/mobile-pic-svg.svg" alt="background image">
+
+        <div id="Main_Heading_Text">
+            <h1>I design things.</h1>
+            <button>View my work</button>
         </div>
-        <img id="pathImage" src="assets/HomePage/Union 4.svg" alt="Image clip">
-        <img id="Image" src="assets/HomePage/Union 1.svg" alt="Img Path"></img>
+
     </div>
 
-    <!------------------------------------------------Page 2------------------------------------------------>
-    <div class="page" id="page-2">
-        <div class="spacer"></div>
-        <h1 id="HeaderPage-2">View some of my work.</h1>
+    <!-- About section -->
+    <div id="about_section">
+            <div id="about_section_text">
+            <h3>Hi, I'm Devin.</h3>
+            <p>I am a computer science engineering student at the University of Cincinnati. I have over 6 years of experience in Adobe
+            Photoshop, Illustrator, and Lightroom. I have experience with C++, MATLAB, Python, Processing, and PHP. I have worked
+            extensively in HTML/CSS, Javascript, React.js, and jQuery .</p>
+        </div>
+    </div>
 
-        <div id="workWrapper">
-            <div onclick="adsRD()" class="card" >
-                <div class="topcard">
-                    <div id="ads">
-                        <i class="fas fa-mouse-pointer"></i>
-                    </div>
-                </div>
-                <div class="bottomcard">
-                    <h1>Ads // Posters</h1>
-                </div>
-            </div>
-            <div onclick="logosRD()" class="card" >
-                <div class="topcard">
-                    <div id="logos">
-                        <i class="fas fa-mouse-pointer"></i>
-                    </div>
-                </div>
-                <div class="bottomcard">
-                    <h1>Logo Concepts</h1>
-                </div>
-            </div>
-            <div onclick="illustrationsRD()" class="card" >
-                <div class="topcard">
-                    <div id="illustrations">
-                        <i class="fas fa-mouse-pointer"></i>
-                    </div>
-                </div>
-                <div class="bottomcard">
-                    <h1>Illustrations</h1>
-                </div>
-            </div>
-            <div onclick="photosRD()" class="card" >
-                <div class="topcard">
-                    <div id="photos">
-                        <i class="fas fa-mouse-pointer"></i>
-                    </div>
-                </div>
-                <div class="bottomcard">
-                    <h1>Photos</h1>
-                </div>
-            </div>
-            <div onclick="websRD()" class="card" >
+    <!-- Credentials section -->
+    <div id="credentials_section_container">
+
+        <div class="credentials_section" id="graphic_section">
+            <i class="fas fa-bezier-curve"></i>
+
+            <h4>Graphic Design</h4>
+            <p>I like to have well thought-out,
+            simple, and stylish designs</p>
+
+            <h6>Things I create:</h6>    
+            <p>Logos, Advertisements,
+            Illustrations, Photography, UX, UI</p>
+
+            <h6>Design Tools</h6>    
+            <ul>
+                <li>Adobe Illustrator</li>
+                <li>Adobe Photoshop</li>
+                <li>Adobe Lightroom</li>
+                <li>Adobe XD</li>
+                <li>Pen & Paper</li>
+            </ul>
+        </div>
+
+        <div class="credentials_section" id="web_section">
+            <i class="fas fa-file-code"></i>
+
+            <h4>Web Developement</h4>
+            <p>I enjoy coding from scratch.
+            Bringing both client and server
+            side ideas to life.</p>
+
+            <h6>Languages I know:</h6>
+            <p>HTML, CSS, Sass, JavaScript, PHP</p>
+
+            <h6>Dev Tools / Frameworks</h6>
+            <ul>
+                <li>VS Code</li>
+                <li>Xampp</li>
+                <li>Bootstrap</li>
+                <li>jQuery</li>
+                <li>React</li>
+                <li>GSAP</li>
+                <li>GitHub</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- Work Section -->
+    <div id="work_section">
+        <h4>My work</h4>
+        <p>Here are some projects I have worked on. Want a commission? <a href="/pages/contact.html">Contact me.</a> </p>
+
+        <div id="work_panels_container">
+            <div onclick="websRD()" class="card">
                 <div class="topcard">
                     <div id="webs">
                         <i class="fas fa-mouse-pointer"></i>
@@ -107,66 +121,72 @@
                     <h1>Web Projects</h1>
                 </div>
             </div>
+            <div onclick="GalleryRD(this)" class="card">
+                <div class="topcard">
+                    <div id="ads">
+                        <i class="fas fa-mouse-pointer"></i>
+                    </div>
+                </div>
+                <div class="bottomcard">
+                    <h1>Ads // Posters</h1>
+                </div>
+            </div>
+            <div onclick="GalleryRD(this)" class="card">
+                <div class="topcard">
+                    <div id="logos">
+                        <i class="fas fa-mouse-pointer"></i>
+                    </div>
+                </div>
+                <div class="bottomcard">
+                    <h1>Logo Concepts</h1>
+                </div>
+            </div>
+            <div onclick="GalleryRD(this)" class="card">
+                <div class="topcard">
+                    <div id="illustrations">
+                        <i class="fas fa-mouse-pointer"></i>
+                    </div>
+                </div>
+                <div class="bottomcard">
+                    <h1>Illustrations</h1>
+                </div>
+            </div>
+            <div onclick="GalleryRD(this)" class="card">
+                <div class="topcard">
+                    <div id="photos">
+                        <i class="fas fa-mouse-pointer"></i>
+                    </div>
+                </div>
+                <div class="bottomcard">
+                    <h1>Photos</h1>
+                </div>
+            </div>
         </div>
+
+    </div>
+
+    <!-- Commision Button -->
+    <div class="commission_section">
+        <div class="commission_text">
+            <h6>Need a design?</h6>
+            <h4>Commission me!</h4>
+        </div>
+        <button class="commission_btn">Let's do this</button>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+
+        <p>Copyright © 2020 Devin Harris Designs</p>
 
         <div class="mediaWrapper">
             <i onclick="YoutubeRD()" class="fab fa-youtube"></i>
             <i onclick="GithubRD()" class="fab fa-github"></i>
             <i onclick="InstagramRD()" class="fab fa-instagram"></i>
         </div>
-    </div>
 
-    <div class="page" id="page-3">
-        <div id="aboutWrapper">
-            <div id="aboutText">
-                <h1>About me.</h1>
-                <h4>My name is Devin Harris. I am a computer science engineer at the University of Cincinnati. I have over 6 years of
-                experience in Adobe Photoshop, Illustrator, and Lightroom. I am currently learning C++, MATLAB, Python, HTML/css,
-                JavaScript, including React.js, PHP, and Processing.
-                <br><br>
-                I am 19 years old and have always had a passion for computers, programming, and design. I've worked in conjunction with
-                many companies for various website developments, logo creations, and posters / advertisement campaigns. I have a youtube
-                channel since 2015 and enjoy making speedarts, tutorials, and playing videogames.
-                <br><br>
-                Always willing to take commisions. Feel free to contact me below!</h4>
-
-                <button onclick="ContactRD('Home')">Contact Me</button>
-            </div>
-
-            <div id="aboutPic"></div>
-        </div>
-    </div>
-
-    <div class="page" id="page-4">
-        <div id="ContactForm">
-            <div id="contact-heading">
-                <h1>Contact Me.</h1>
-                <div class="mediaWrapper">
-                    <i onclick="YoutubeRD()" class="fab fa-youtube"></i>
-                    <i onclick="GithubRD()" class="fab fa-github"></i>
-                    <i onclick="InstagramRD()" class="fab fa-instagram"></i>
-                </div>
-            </div>
-            
-            <form action="php/form.php" method="post">
-                <input type="text" name="fname" placeholder="First Name">
-                <input type="text" name="lname" placeholder="Last Name">
-                <input type="email" name="email" placeholder="Email">
-                <textarea id="message" name="message" placeholder="Message"></textarea>
-                <input id="submit-form" type="submit" name="submit">
-            </form>
-        </div>
-    </div>
-
-    <footer>
-        <p>Copyright © 2020 Devin Harris Designs</p>
-        <div>
-            <a href="#">Home</a>
-            <a href="#">Top</a>
-            <a href="#ContactForm">Contact</a>
-        </div>
     </footer>
-    </div>
-</body>
 
+
+</body>
 </html>
