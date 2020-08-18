@@ -1,0 +1,131 @@
+html {
+    background-color: var(--Dark-Blue);
+}
+
+body {
+    background-color: var(--Dark-Blue);
+}
+
+/* Navigation Styles */
+.webProjectNav {
+    background-color: rgba(255, 255, 255, 0.09);
+}
+
+.webProjectNav #Links {
+    background-color: white;
+}
+
+.webProjectNav #Links ul li a {
+    color: var(--Dark-Blue);
+}
+
+.webProjectNav #Links ul li a:hover {
+    color: var(--Light-Blue);
+}
+
+/* Gallery Styles */
+#Project_container {
+    width: 70%;
+    margin: 0 auto;
+    height: 90vh;
+    padding-top: 140px;
+    background-color: var(--Dark-Blue);
+    padding-bottom: var(--Down-Translation);
+}
+#Project_container button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    transition: .3s;
+}
+
+#Project_container button:hover {
+    color: var(--Light-Blue);
+}
+
+#Project_container button i {
+    margin: 0 5px 0 0;
+    color: var(--Light-Blue);
+}
+
+#Project_container h1 {
+    color: white;
+    font-size: 130%;
+    text-align: left;
+    font-weight: 700;
+    margin: 15px 0;
+}
+
+#Project_container #description p {
+    color: white;
+    font-size: 70%;
+    text-align: left;
+    font-weight: 700;
+}
+
+#Project_container #description p span {
+    color: var(--Light-Blue);
+}
+
+/* Project code click styles */
+.projectCodeClick {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 1;
+    margin-top: 10%;
+    width: 100%;
+}
+
+.projectCodeClick {
+    color: white;
+    font-size: 70%;
+    text-align: left;
+    font-weight: 400;
+}
+
+.projectCodeClick:hover {
+    cursor: pointer;
+}
+
+.projectCodeClickBtn {
+    height: 5vmin;
+    width: 5vmin;
+    background-image: url('../assets/HomePage/codeArrow.svg');
+    background-position: center;
+    background-size: cover;
+    margin-left: 5%;
+    transition: .1s;
+}
+
+.projectCodeClick:hover .projectCodeClickBtn {
+    height: 5.5vmin;
+    width: 5.5vmin;
+}
+
+/* Site Click Styles */
+.viewSiteClick {
+    margin: 35px auto;
+    background-color: white;
+    width: 100%;
+    padding: 15px 0;
+    border-radius: var(--Credentials_Border);
+    color: var(--Dark-Blue);
+    text-align: center;
+    transition: .3s;
+}
+
+.viewSiteClick:hover {
+    background-color: var(--Light-Blue);
+    color: white;
+}
+
+.viewSiteClick p {
+    font-weight: 300;
+    font-size: 80%;
+}
+
+.viewSiteClick h4 {
+    font-weight: 900;
+    font-size: 120%;
+}

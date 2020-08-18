@@ -1,0 +1,350 @@
+/* Variables */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+:root {
+    --Dark-Blue: #0C3440;
+    --Light-Blue: #30CDFF;
+    --Light-Green: #78E574;
+    --Border-White: #E7EAEE;
+    --Up-Translation: -60px;
+    --Down-Translation: 40px;
+    --Credentials_Border: 10px;
+}
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'lato';
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    background-color: #30CDFF;
+}
+
+html::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    background-color: white;
+}
+
+html::-webkit-scrollbar {
+    width: 10px;
+    background-color: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #555;
+}
+
+body {
+    background-color: white;
+}
+
+button:focus {
+    border: none;
+    outline: none;
+}
+
+/* Navigation Styles */
+nav {
+    width: 100vw;
+    height: 70px;
+    background-color: rgba(255, 255, 255, 0.2);
+    display: grid;
+    grid-template-columns: 70px auto;
+    grid-template-rows: 100%;
+    align-items: center;
+    position: absolute;
+    top: 0; left: 0;
+    z-index: 10;
+}
+
+nav #HeaderLogo {
+    width: 100%;
+    height: 100%;
+    background-image: url('../assets/HomePage/DCHlogoAI-03.png');
+    background-position: center;
+    background-size: cover;
+}
+
+nav #HeaderLogo:hover {
+    cursor: pointer;
+}
+
+nav #Links {
+    /* border: 2px solid var(--Border-White); */
+    grid-row: 2;
+    grid-column: span 2;
+    width: 100vw;
+    padding: 15px;
+    background-color: var(--Dark-Blue);
+    display: none;
+}
+
+nav #Links ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav #Links ul li {
+    margin: 0 5px;
+}
+
+nav #Links ul li a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: 900;
+    font-size: 80%;
+    transition: .3s;
+}
+
+nav #Links ul li a:hover {
+    color: var(--Light-Blue);
+}
+
+nav #Hamburger {
+    justify-self: end;
+    margin: 0 25px;
+    height: 50%;
+    width: 30px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+
+nav #Hamburger .line {
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    border-radius: 50rem;
+}
+
+/* Main Heading button styles */
+#Main_Heading_Text button {
+    color: var(--Light-Blue);
+    font-weight: 500;
+    background-color: white;
+    padding: 10px 0;
+    border: none;
+    transition: .3s;
+}
+
+#Main_Heading_Text button:hover {
+    cursor: pointer;
+    background-color: var(--Dark-Blue);
+    color: white;
+}
+
+/* Commision Button Section Styles */
+.commission_section {
+    width: 80%;
+    background-color: var(--Dark-Blue);
+    padding: 25px;
+    border-radius: 15px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    position: relative;
+    top: var(--Down-Translation);
+}
+
+.commission_text {
+    width: 50%;
+}
+
+.commission_text h6 {
+    font-size: 70%;
+    font-weight: 300;
+}
+
+.commission_text h4 {
+    font-size: 80%;
+    font-weight: 900;
+}
+
+.commission_btn, .commission_btn_2 {
+    background-color: var(--Light-Blue);
+    padding: 10px 20px;
+    color: white;
+    border-radius: 50rem;
+    border: none;
+    font-weight: 900;
+    font-size: 70%;
+    transition: .3s;
+    border: 2px solid var(--Light-Blue);
+}
+
+.commission_btn:hover, .commission_btn_2:hover {
+    background-color: transparent;
+    cursor: pointer;
+}
+
+
+/* Footer Section Styles */
+footer {
+    width: 100vw;
+    background-color: var(--Light-Blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10vh 15%;
+    text-align: center;
+    color: white;
+}
+
+footer p {
+    font-weight: 300;
+    font-size: 70%;
+}
+
+.mediaWrapper {
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+}
+
+.mediaWrapper i {
+    font-size: 100%;
+    transition: .3s;
+    margin: 0 5px;
+}
+
+.mediaWrapper i:hover {
+    color: var(--Dark-Blue);
+    cursor: pointer;
+}
+
+/* Work Section Styles */
+#work_section {
+    width: 100vw;
+    text-align: center;
+}
+
+#work_section h4 {
+    font-size: 120%;
+    font-weight: 900;
+}
+
+#work_section p {
+    margin: 5px auto 25px auto;
+    font-size: 60%;
+    width: 70%;
+    font-weight: 300;
+}
+
+#work_section p a {
+    text-decoration: none;
+    color: var(--Light-Blue);
+    font-weight: 900;
+    transition: .3s;
+}
+
+#work_section p a:hover {
+    color: var(--Dark-Blue);
+    cursor: pointer;
+}
+
+#work_panels_container {
+    margin: 0 auto;
+    display: grid;
+    width: 60%;
+    grid-template-columns: 1fr;
+    grid-auto-rows: max-content;
+    z-index: 15;
+    grid-column-gap: 15px;
+}
+
+.card {
+    z-index: 15;
+    height: 40vh;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 75% 20%;
+    grid-row-gap: 2%;
+}
+
+.card:hover {
+    cursor: pointer;
+}
+
+.card:hover .topcard div i {
+    opacity: 1;
+}
+
+.card:hover .bottomcard {
+    background-color: var(--Light-Blue);
+}
+
+.card:hover .bottomcard h1 {
+    color: white;
+}
+
+.topcard {
+    background-image: linear-gradient(to top, #A8FF78, #78FFD6);
+    padding: .4rem;
+    height: 100%;
+}
+
+.topcard div {
+    height: inherit;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.topcard div i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 40;
+    color: white;
+    font-size: 5rem;
+    opacity: 0;
+    transition: .3s;
+}
+
+.topcard div::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--Dark-Blue);
+    opacity: .89;
+}
+
+.bottomcard {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+    margin-bottom: 50px;
+    padding: 20px 0;
+}
+
+.bottomcard h1 {
+    color: var(--Dark-Blue);
+    font-size: 120%;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 0;
+    padding-top: 0;
+    transition: .3s;
+}

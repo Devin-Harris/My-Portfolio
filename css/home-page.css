@@ -1,0 +1,145 @@
+
+/* Main Heading Styles */
+#Main_Heading {
+    position: relative;
+    top: 0; left: 0;
+    width: 100vw;
+    height: auto;
+    background-image: url('../assets/HomePage/mobile-color-svg.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 5;
+}
+
+#Main_Heading img {
+    width: 100vw;
+    opacity: 24%;
+}
+
+#Main_Heading #Main_Heading_Text {
+    width: 100vw;
+    height: auto;
+    position: absolute;
+    top: 50%; left: 50%; transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#Main_Heading #Main_Heading_Text h1 {
+    text-transform: uppercase;
+    font-weight: 900;
+    width: fit-content;
+    font-size: 150%;
+}
+
+/* About Section Styles */
+#about_section {
+    width: 100vw;
+    height: 70vh;
+    position: relative;
+    top: var(--Up-Translation); left: 0;
+    margin-bottom: var(--Up-Translation);
+    background-color: var(--Dark-Blue);
+    padding: 120px 0 0 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about_section #about_section_text {
+    width: 80%;
+}
+
+#about_section h3 {
+    color: white;
+    font-weight: 700;
+    font-size: 150%;
+}
+
+#about_section p {
+    color: white;
+    font-weight: 300;
+    font-size: 83%;
+}
+
+/* Credentials Section Styles */
+#credentials_section_container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: var(--Up-Translation);
+}
+
+.credentials_section {
+    width: 80%;
+    padding: 15px;
+    height: auto;
+    border: 2px solid var(--Border-White);
+    text-align: center;
+    background-color: white;
+}
+
+.credentials_section h4 {
+    color: var(--Dark-Blue);
+    font-weight: 900;
+    font-size: 130%;
+}
+
+.credentials_section h6 {
+    color: var(--Light-Blue);
+    font-weight: 700;
+    font-size: 100%;
+}
+
+.credentials_section i {
+    margin: 25px 0;
+    color: var(--Light-Blue);
+}
+
+.credentials_section p, .credentials_section ul {
+    margin: 10px auto 25px auto;
+    list-style-type: none;
+    color: var(--Dark-Blue);
+    font-weight: 300;
+    font-size: 80%;
+    width: 60%;
+}
+
+#graphic_section {
+    border-bottom: 1px;
+    border-radius: var(--Credentials_Border) var(--Credentials_Border) 0 0;
+}
+
+#web_section {
+    border-radius: 0 0 var(--Credentials_Border) var(--Credentials_Border);
+}
+
+
+/* Work Section Styles */
+#ads {
+    background-image: url("../assets/Galleries/ads/17.jpg");
+}
+
+#logos {
+    background-image: url("../assets/Galleries/logos/1-0.png");
+}
+
+#illustrations {
+    background-image: url("../assets/Galleries/illustrations/1-0.jpg");
+}
+
+#photos {
+    background-image: url("../assets/Galleries/photos/1.jpg");
+}
+
+#webs {
+    background-image: url("../assets/HomePage/code.jpg");
+}
+

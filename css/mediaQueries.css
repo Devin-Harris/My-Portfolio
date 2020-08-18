@@ -1,0 +1,248 @@
+/* Extra small devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+
+    #web_panels_container, #gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    form {
+        width: 60vw;
+    }
+
+    .commission_section {
+        width: 60%; 
+    }
+
+    #work_section h4 {
+        font-size: 150%;
+    }
+
+    #work_section p {
+        font-size: 70%;
+    }
+
+ }
+
+ /* change picture on portfolio to more landscape style */
+ @media (min-width: 600px) { 
+
+    #Main_Heading {
+        background-image: url('../assets/HomePage/desktop-color-svg.svg');
+    }
+
+    #Main_Heading #Main_Heading_Text h1 {
+        font-size: 200%;
+    }
+
+    #credentials_section_container {
+        margin: 0 auto;
+        width: 80%;
+        flex-direction: row;
+    }
+
+    .credentials_section {
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .credentials_section i {
+        font-size: 150%;
+    }
+
+    #graphic_section {
+        border: 2px solid var(--Border-White);
+        border-right: 1px;
+        border-radius: var(--Credentials_Border) 0 0 var(--Credentials_Border);
+    }
+
+    #web_section {
+        border: 2px solid var(--Border-White);
+        border-radius: 0 var(--Credentials_Border) var(--Credentials_Border) 0;
+    }
+
+    #work_panels_container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+ }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+
+    #web_panels_container, #gallery, #work_panels_container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #gallery {
+        grid-auto-rows: 500px;
+    }
+
+    #work_section {
+        margin: 20vh auto;
+    }
+
+    #work_section h4 {
+        font-size: 200%;
+        font-weight: 900;
+    }
+
+    #work_section p {
+        margin: 5px auto 25px auto;
+        font-size: 100%;
+        width: 70%;
+        font-weight: 300;
+    }
+
+    .commission_section {
+        width: 40%;
+    }
+
+    .commission_text h6 {
+        font-size: 100%;
+        font-weight: 300;
+    }
+
+    .commission_text h4 {
+        font-size: 120%;
+        font-weight: 900;
+    }
+
+    .commission_btn, .commission_btn_2 {
+        padding: 10px 50px;
+        font-weight: 900;
+        font-size: 100%;
+    }
+
+    #form_section {
+        margin: 20vh auto;
+    }
+
+    footer {
+        padding: 20vh 15%;
+    }
+
+    footer p {
+        font-weight: 300;
+        font-size: 100%;
+    }
+
+    .mediaWrapper i {
+        font-size: 150%;
+        margin: 5px;
+    }
+
+    #Project_container {
+        width: 50%;
+        height: 95vh;
+    }
+
+    #Project_container h1 {
+        font-size: 200%;
+    }
+
+    #Project_container #description p {
+        font-size: 100%;
+    }
+
+    .projectCodeClick {
+        font-size: 100%;
+    }
+
+    .viewSiteClick {
+        margin: 55px auto;
+        background-color: white;
+        width: 60%;
+    }
+ }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+
+    nav #Links {
+        grid-row: 1;
+        grid-column: 2;
+        background-color: transparent;
+        display: block;
+        justify-self: flex-end;
+        width: 100%;
+    }
+
+    nav #Links ul {
+        justify-content: flex-end;
+        padding-right: 25px;
+        width: 100%;
+    }
+
+    nav #Links ul li {
+        margin: 0 2%;
+    }
+
+    nav #Links ul li a {
+        font-weight: 500;
+        font-size: 100%;
+    }
+
+    nav #Links ul li a:hover {
+        color: var(--Dark-Blue);
+    }
+
+    nav #Hamburger {
+        display: none;
+    }
+
+    #Main_Heading #Main_Heading_Text h1, #Web_Heading #Main_Heading_Text h1, #Contact_Heading #Main_Heading_Text h1, #Gallery_Heading #Main_Heading_Text h1 {
+        font-size: 250%;
+    }
+
+    #web_panels_container, #work_panels_container {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    #credentials_section_container {
+        width: 60%;
+    }
+
+    #about_section #about_section_text {
+        width: 50%;
+    }
+
+    #about_section h3 {
+        font-size: 200%;
+    }
+
+    #about_section p {
+        font-size: 100%;
+    }
+
+    .webProjectNav {
+        background-color: rgba(255, 255, 255, 0.09);
+    }
+
+    .webProjectNav #Links {
+        background-color: transparent;
+    }
+
+    .webProjectNav #Links ul li a {
+        color: white;
+    }
+
+    .webProjectNav #Links ul li a:hover {
+        color: var(--Light-Blue);
+    }
+
+
+ }
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+
+    #credentials_section_container {
+        width: 50%;
+    }
+
+ }
